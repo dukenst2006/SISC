@@ -1,0 +1,51 @@
+$width: 2480px;
+$height: 3508;
+
+html, body {
+  background-color: #fff;
+  color: #636b6f;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 100;
+}
+
+.text-right > table > tbody > tr {
+  text-align: right;
+}
+
+#invoice-id {
+  width: 10%;
+}
+
+#invoice-name {
+  width: 40%;
+}
+
+#invoice-unit_price {
+  width: 15%;
+}
+
+#invoice-quantity {
+  width: 15%;
+}
+
+#invoice-totals {
+  width: 20%;
+}
+
+table {
+  border: 1px solid black;
+  width: 100%;
+  margin-bottom: 25px;
+
+  & > tbody > tr {
+    border: 1px solid black;
+  }
+
+  & > tbody > tr > td {
+    padding: 5px;
+  }
+
+  & > tbody > .invoice-row {
+    padding-bottom: 50px;
+  }
+}

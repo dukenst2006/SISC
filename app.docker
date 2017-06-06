@@ -1,0 +1,12 @@
+FROM php:7-fpm
+
+RUN apt-get update && apt-get install -y libcurl3-dev libmcrypt-dev mysql-client \
+    && docker-php-ext-install mcrypt pdo_mysql \
+    && docker-php-ext-install curl
+
+# Install required libraries for mongodb
+RUN apt-get install pkg-config libssl-dev -y && pecl install mongodb
+
+RUN echo "extension=mongodb.so" > $PHP_INI_DIR/conf.d/mongodb.ini
+
+WORKDIR /var/www

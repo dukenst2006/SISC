@@ -1,0 +1,53 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+.padding-bottom {
+  &-10 {
+    padding-bottom: 10px;
+  }
+
+  &-20 {
+    padding-bottom: 20px;
+  }
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.almost-full-height {
+  height: 85vh;
+}
+
+.flex-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.position-ref {
+  position: relative;
+}
+
+.invoice-title h2, .invoice-title h3 {
+  display: inline-block;
+}
+
+.table > tbody > tr > .no-line {
+  border-top: none;
+}
+
+.table > thead > tr > .no-line {
+  border-bottom: none;
+}
+
+.table > tbody > tr > .thick-line {
+  border-top: 2px solid;
+}
